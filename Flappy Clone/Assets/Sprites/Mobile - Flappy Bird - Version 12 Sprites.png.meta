@@ -226,13 +226,13 @@ TextureImporter:
     second: Mobile - Flappy Bird - Version 12 Sprites_73
   - first:
       213: 1358095613425202594
-    second: Mobile - Flappy Bird - Version 12 Sprites_74
+    second: Bird_1
   - first:
       213: -6849601262952108319
-    second: Mobile - Flappy Bird - Version 12 Sprites_75
+    second: Bird_2
   - first:
       213: -7182406791380544474
-    second: Mobile - Flappy Bird - Version 12 Sprites_76
+    second: Bird_3
   - first:
       213: 9119582767357130973
     second: Mobile - Flappy Bird - Version 12 Sprites_77
@@ -1888,7 +1888,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - Version 12 Sprites_74
+      name: Bird_1
       rect:
         serializedVersion: 2
         x: 3
@@ -1909,7 +1909,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - Version 12 Sprites_75
+      name: Bird_2
       rect:
         serializedVersion: 2
         x: 31
@@ -1930,7 +1930,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mobile - Flappy Bird - Version 12 Sprites_76
+      name: Bird_3
       rect:
         serializedVersion: 2
         x: 59
