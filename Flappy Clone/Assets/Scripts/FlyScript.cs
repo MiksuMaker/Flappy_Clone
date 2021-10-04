@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class FlyScript : MonoBehaviour
 {
+
+    public float velocity = 1;
+    private Rigidbody2D rb;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -15,7 +20,7 @@ public class FlyScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Space down!");
+            rb.velocity = Vector2.up * velocity;
         }
     }
 }
