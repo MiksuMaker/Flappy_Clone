@@ -10,10 +10,7 @@ public class PipeSpawner : MonoBehaviour
     public GameObject pipe;
     [SerializeField] private float height = 1;
 
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
