@@ -139,7 +139,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: af12f79a486681a4094f679038c85843, type: 3}
+  jumpVolyme: 0.3
+  deathSound: {fileID: 8300000, guid: c096ef93f799d8d4195dd6e9ea1a3563, type: 3}
+  deathVolyme: 1
   velocity: 1.4
+  stillAlive: 0
 --- !u!70 &8875827742233478282
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

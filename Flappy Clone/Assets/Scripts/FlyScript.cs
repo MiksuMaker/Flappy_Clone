@@ -5,6 +5,11 @@ using UnityEngine;
 public class FlyScript : MonoBehaviour
 {
     public GameManager gameManager;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] float jumpVolyme = 1f;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] float deathVolyme = 1f;
+
     public float velocity = 1;
     private Rigidbody2D rb;
 
@@ -24,6 +29,7 @@ public class FlyScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && stillAlive)
         {
             rb.velocity = Vector2.up * velocity;
+            AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpVolyme);
         }
     }
 
@@ -31,5 +37,6 @@ public class FlyScript : MonoBehaviour
     {
         stillAlive = false;
         gameManager.GameOver();
+        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathVolyme);
     }
 }
