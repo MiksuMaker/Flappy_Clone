@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public GameObject gameOverCanvas;
 
+    public bool isGameOver = false;
+
 
     void Start()
     {
@@ -17,11 +19,12 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverCanvas.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0.4f;
     }
 
     public void Replay()
     {
         SceneManager.LoadScene(0);
     }
+
 }
